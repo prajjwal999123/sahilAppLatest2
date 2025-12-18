@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAI CARGO MOVERS - Our Services</title>
+    <link rel="stylesheet" href="css/common.css?v=1.0">
+    <link rel="stylesheet" href="css/services.css?v=1.3">
+    <link rel="stylesheet" href="css/responsive.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="SAI CARGO MOVERS Logo">
+                        SAI CARGO MOVERS
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li class="dropdown">
+                        <a href="branches.html" class="dropbtn">Branches <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="branches.html#booking-branches">Booking Branches</a>
+                            <a href="branches.html#delivery-states">Delivery States</a>
+                        </div>
+                    </li>
+                    <li><a href="tracking.html">Tracking</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="services-page">
+        <section class="services-hero">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>Comprehensive logistics solutions tailored for your business needs.</p>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <div class="services-layout">
+                    <div class="services-sidebar-redesigned">
+                        <ul>
+                            <li><a href="#transportation"><i class="fas fa-truck"></i> Transportations</a></li>
+                            <li><a href="#full-truck-load"><i class="fas fa-truck-loading"></i> Full Truck Load (FTL)</a></li>
+                            <li><a href="#partial-truck-load"><i class="fas fa-truck-moving"></i> Partial Truck Load (PTL)</a></li>
+                            <li><a href="#3pl"><i class="fas fa-cogs"></i> 3PL (Third-Party Logistics)</a></li>
+                            <li><a href="#warehousing"><i class="fas fa-warehouse"></i> Warehousing</a></li>
+                            <li><a href="#trucking"><i class="fas fa-road"></i> Trucking</a></li>
+                        </ul>
+                    </div>
+                    <div class="services-content-container-redesigned">
+                        <div class="service-content-redesigned" id="transportation">
+                            <h3>Transportations</h3>
+                            <p>We provide comprehensive transportation services to move your goods efficiently and safely. Our network spans across the country, ensuring timely delivery to any destination. We handle various types of cargo with a commitment to reliability and professionalism, making us a trusted partner for all your transportation needs.</p>
+                        </div>
+                        <div class="service-content-redesigned" id="full-truck-load">
+                            <h3>Full Truck Load (FTL)</h3>
+                            <p>Our Full Truck Load (FTL) service is designed for large shipments that require an entire truck. We offer dedicated transportation, ensuring your cargo reaches its destination without any intermediate stops. This service provides maximum security, speed, and cost-effectiveness for high-volume shipments.</p>
+                        </div>
+                        <div class="service-content-redesigned" id="partial-truck-load">
+                            <h3>Partial Truck Load (PTL)</h3>
+                            <p>With our Partial Truck Load (PTL) service, you can transport smaller shipments without paying for a full truck. We consolidate your cargo with other shipments, offering a cost-effective and flexible solution. PTL is ideal for businesses that need to move moderate amounts of goods on a regular basis.</p>
+                        </div>
+                        <div class="service-content-redesigned" id="3pl">
+                            <h3>3PL (Third-Party Logistics)</h3>
+                            <p>Our Third-Party Logistics (3PL) services offer end-to-end supply chain management. We handle everything from transportation and warehousing to inventory management and order fulfillment. By outsourcing your logistics to us, you can focus on your core business while we streamline your operations for maximum efficiency.</p>
+                        </div>
+                        <div class="service-content-redesigned" id="warehousing">
+                            <h3>Warehousing</h3>
+                            <p>We offer secure and flexible warehousing solutions to meet your storage needs. Our facilities are equipped with modern technology for inventory management and security. Whether you need short-term storage or a long-term warehousing solution, we provide a safe and cost-effective environment for your goods.</p>
+                        </div>
+                        <div class="service-content-redesigned" id="trucking">
+                            <h3>Trucking</h3>
+                            <p>Our trucking services form the backbone of our logistics operations. We maintain a modern fleet of vehicles to ensure reliable and timely delivery of your goods. From local distribution to long-haul transportation, our experienced drivers and logistics experts are committed to providing exceptional service every step of the way.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="js/public.js?v=1.1"></script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

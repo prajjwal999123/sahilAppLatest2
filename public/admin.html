@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAI CARGO MOVERS - Admin Login</title>
+    <link rel="stylesheet" href="css/common.css?v=1.0">
+    <link rel="stylesheet" href="css/admin.css?v=1.0">
+    <link rel="stylesheet" href="css/responsive.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="SAI CARGO MOVERS Logo">
+                        SAI CARGO MOVERS
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="tracking.html">Tracking</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="admin-hero">
+            <div class="hero-content">
+                <h1>Admin Access</h1>
+                <p>Login to manage website content.</p>
+            </div>
+        </section>
+
+        <section class="admin-login">
+            <div class="container">
+                <div class="login-container">
+                    <h2>Administrator Login</h2>
+                    <form id="admin-login-form">
+                        <input type="text" id="username" placeholder="Username" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <button type="submit" class="cta-button">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SAI CARGO MOVERS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/public.js"></script>
+    <script src="js/login.js?v=1.1"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js" type="module"></script>
+    <script src="js/firebase-config.js" type="module"></script>
+    <script src="js/admin.js" type="module"></script>
+</body>
+</html>

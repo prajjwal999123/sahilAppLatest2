@@ -1,0 +1,45 @@
+/* Admin Login Page Specific Styles */
+
+.admin-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/admin-hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.admin-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.admin-hero p {
+    font-size: 20px;
+}
+
+.admin-login {
+    padding: 60px 0;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#admin-login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}

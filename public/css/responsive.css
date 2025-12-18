@@ -1,0 +1,244 @@
+/* Responsive */
+@media (max-width: 992px) {
+    /* --- Branches Page on Tablets --- */
+    .booking-branches-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .accordion {
+        max-width: 90%;
+    }
+
+    /* Map Section on tablets */
+    .map-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .map-image, .map-content {
+        max-width: 80%;
+    }
+
+    /* Redesigned Services on Tablets */
+    .tabs-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .tab-list-redesigned {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 0 0 auto; /* Reset flex property */
+    }
+
+    .tab-item-redesigned {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .tab-item-redesigned span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+    header {
+        position: fixed !important;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        position: absolute !important;
+    }
+
+    .hero-content h1, .about-hero h1, .branches-hero h1, .contact-hero h1, .tracking-hero h1 {
+        font-size: 36px; /* Reduced font size for mobile */
+    }
+
+    header .nav-links a {
+        color: #333; /* Ensure links are visible on white background */
+    }
+
+    header.scrolled .nav-links a {
+        color: #333; /* Keep color consistent on scroll */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1002; /* Ensure hamburger is clickable */
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::after {
+        left: 30px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item:nth-child(odd), .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content {
+        text-align: left;
+    }
+
+    .timeline-icon {
+        left: 5px;
+    }
+
+    /* Responsive Service Cards */
+    .service-card-grid {
+        grid-template-columns: 1fr; /* Stack cards on mobile */
+    }
+
+    .service-card {
+        padding: 25px;
+        gap: 15px;
+    }
+
+    .service-card-content h3 {
+        font-size: 20px;
+    }
+
+    /* --- Branches Page on Mobile --- */
+    .booking-branch-card {
+        padding: 25px;
+    }
+
+    .booking-branch-card h3 {
+        font-size: 22px;
+    }
+
+    .booking-branch-card p {
+        font-size: 16px;
+    }
+
+    .accordion-header h3 {
+        font-size: 18px;
+    }
+
+    /* Redesigned services tabs for mobile */
+    .tab-item-redesigned {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .tab-item-redesigned i {
+        font-size: 24px;
+    }
+
+    .tab-item-redesigned span {
+        font-size: 14px; /* smaller font for mobile */
+    }
+
+    .service-content-redesigned {
+        padding: 30px 20px;
+    }
+
+    /* Map Section on mobile */
+    .map-section {
+        padding: 60px 0;
+    }
+    
+    .map-container {
+        grid-template-columns: 1fr;
+    }
+
+    .map-image, .map-content {
+        max-w: 90%;
+        margin: 0 auto;
+    }
+
+    .map-content h2 {
+        font-size: 32px;
+    }
+
+    /* Tracking Page Responsive */
+    .tracking-form-container {
+        padding: 40px 20px;
+    }
+
+    #tracking-form {
+        flex-direction: column;
+    }
+
+    #tracking-details {
+        height: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .services-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services-sidebar-redesigned {
+        max-w: 100%;
+    }
+.commitment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hamburger Dropdown */
+    .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+        background-color: #f9f9f9;
+        box-shadow: none;
+    }
+
+    .dropdown-content a {
+        color: #333;
+        padding: 10px 0;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+}

@@ -1,0 +1,85 @@
+/* Services Page Specific Styles */
+
+.services-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/ourservices.JPG') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.services-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.services-hero p {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.services-section {
+    padding: 60px 0;
+}
+
+.services-layout {
+    display: flex;
+    gap: 40px;
+}
+
+.services-sidebar-redesigned {
+    flex: 1;
+    max-width: 250px;
+}
+
+.services-sidebar-redesigned ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 100px;
+}
+
+.services-sidebar-redesigned li a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.services-sidebar-redesigned li a:hover,
+.services-sidebar-redesigned li a.active {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+.services-sidebar-redesigned li a i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.services-content-container-redesigned {
+    flex: 3;
+}
+
+.service-content-redesigned {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-content-redesigned h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ff6600;
+}

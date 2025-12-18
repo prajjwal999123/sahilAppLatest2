@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - SAI CARGO MOVERS</title>
+    <link rel="stylesheet" href="css/common.css?v=1.0">
+    <link rel="stylesheet" href="css/admin-dashboard.css?v=1.0">
+    <link rel="stylesheet" href="css/responsive.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="admin-dashboard-page">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="SAI CARGO MOVERS Logo">
+                        SAI CARGO MOVERS
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="branches.html">Branches</a></li>
+                    <li><a href="tracking.html">Tracking</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="admin-hero">
+            <div class="hero-content">
+                <h1>Admin Dashboard</h1>
+                <p>Manage your website content with ease.</p>
+                <button id="logout-button" class="cta-button"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </section>
+
+        <section class="dashboard-content">
+            <div class="container">
+                <div class="dashboard-menu">
+                    <button id="manage-booking-btn" class="cta-button">Manage Booking Branches</button>
+                    <button id="manage-delivery-btn" class="cta-button">Manage State Wise Delivery Branches</button>
+                </div>
+
+                <div id="booking-branch-management" class="management-section">
+                    <div class="dashboard-card">
+                        <div class="dashboard-card-header">
+                            <h2><i class="fas fa-building"></i> Manage Booking Branches</h2>
+                        </div>
+                        <form id="add-booking-branch-form">
+                            <input type="text" id="booking-branch-name" placeholder="Branch Name" required>
+                            <input type="text" id="booking-branch-address" placeholder="Branch Address" required>
+                            <input type="text" id="booking-branch-phone" placeholder="Branch Phone" required>
+                            <input type="url" id="booking-branch-location" placeholder="Google Maps Link">
+                            <button type="submit" class="cta-button">Add Branch</button>
+                        </form>
+                        <div id="booking-branch-list" class="admin-branch-list"></div>
+                    </div>
+                </div>
+
+                <div id="delivery-branch-management" class="management-section">
+                    <div class="dashboard-card">
+                        <h2><i class="fas fa-truck"></i> Manage State Wise Delivery Branches</h2>
+                        <form id="add-delivery-branch-form">
+                            <input type="text" id="delivery-branch-state" placeholder="State Name" required>
+                            <input type="url" id="delivery-branch-link" placeholder="Excel Sheet Link" required>
+                            <button type="submit" class="cta-button">Add State Link</button>
+                        </form>
+                        <div id="delivery-branch-list" class="admin-branch-list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="edit-booking-branch-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Edit Booking Branch</h2>
+            <form id="edit-booking-branch-form">
+                <input type="hidden" id="edit-booking-branch-id">
+                <input type="text" id="edit-booking-branch-name" placeholder="Branch Name" required>
+                <input type="text" id="edit-booking-branch-address" placeholder="Branch Address" required>
+                <input type="text" id="edit-booking-branch-phone" placeholder="Branch Phone" required>
+                <input type="url" id="edit-booking-branch-location" placeholder="Google Maps Link">
+                <button type="submit" class="cta-button">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="edit-delivery-branch-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Edit Delivery Branch</h2>
+            <form id="edit-delivery-branch-form">
+                <input type="hidden" id="edit-delivery-branch-id">
+                <input type="text" id="edit-delivery-branch-state" placeholder="State Name" required>
+                <input type="url" id="edit-delivery-branch-link" placeholder="Excel Sheet Link" required>
+                <button type="submit" class="cta-button">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SAI CARGO MOVERS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js" type="module"></script>
+    <script src="js/firebase-config.js" type="module"></script>
+    <script src="js/admin.js?v=1.9" type="module"></script>
+    <script src="js/public.js"></script>
+</body>
+</html>

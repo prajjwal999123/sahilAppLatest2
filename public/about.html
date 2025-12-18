@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAI CARGO MOVERS - About Us</title>
+    <link rel="stylesheet" href="css/common.css?v=1.0">
+    <link rel="stylesheet" href="css/about.css?v=1.9">
+    <link rel="stylesheet" href="css/responsive.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="SAI CARGO MOVERS Logo">
+                        SAI CARGO MOVERS
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li class="dropdown">
+                        <a href="branches.html" class="dropbtn">Branches <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="branches.html#booking-branches">Booking Branches</a>
+                            <a href="branches.html#delivery-states">Delivery States</a>
+                        </div>
+                    </li>
+                    <li><a href="tracking.html">Tracking</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-page">
+        <section class="about-hero">
+            <div class="container">
+                <h1>About Our Journey</h1>
+                <p>Learn more about our mission, our team, and our commitment to excellence.</p>
+            </div>
+        </section>
+
+        <section class="about-section dark-bg">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Our Mission</h3>
+                        <p>To provide reliable, efficient, and secure transport solutions that exceed our clients' expectations every time.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Our Vision</h3>
+                        <p>To be the most trusted and innovative logistics partner, connecting businesses and communities nationwide.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section dark-bg">
+            <div class="container">
+                <h2 class="section-title">Our History</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-flag-checkered"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2011 - The Beginning</h4>
+                            <p>We began our journey as Sai Goods Carrier with a single truck, initially serving only the Haryana region. This marked the start of our commitment to reliable logistics.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2020 - Regional Growth</h4>
+                            <p>We expanded our operations into Punjab, Himachal, UP, and Rajasthan, significantly increasing our fleet to meet growing demand.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>2025 - Continued Growth</h4>
+                            <p>With a fleet size of over 100+, 7 branches, and 300+ service locations, we continue to expand our reach and services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-section">
+            <div class="container">
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-gem"></i>
+                        <h4>Integrity</h4>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Reliability</h4>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-star"></i>
+                        <h4>Excellence</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="js/public.js"></script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
